@@ -1,0 +1,256 @@
+  .player1 {
+    -ms-flex-preferred-size: 84%;
+    flex-basis: 84%;
+    max-width: 84%;
+}
+
+.player2{
+  width: 100%;
+  position: relative;
+  padding: 0;
+  padding-top: 56.25%;
+}
+
+.player3 iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+.player-container {
+    display: flex;
+    margin-bottom: 14px
+}
+
+.player-select {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  max-width: 30%;
+  overflow: auto;
+}
+.player-select a {
+  text-decoration: none;
+}
+
+.player-select-item {
+  width: 100%;
+  border-radius: 0px 10px 10px 0px;
+  height: 25%;
+  display: flex;
+}
+.player-select-item:hover {
+  background: #121F43;
+}
+
+.select{
+  background: #121F43;
+}
+
+.player-select-item img {
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+.psi {
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--text-prmary);
+  font-size: 1vw;
+  text-decoration: none;
+}
+.psi1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div::-webkit-scrollbar {
+  width: 0px;       
+}
+/*я заебался делать эти картинки, но они работают*/
+
+
+/*кнопочки нахуй*/
+
+.btn-player {
+  display: flex;
+  width: 73.6%;
+  margin-bottom: 20px;
+}
+.btn-player img {
+  margin-right: 5px;
+  padding: 5px;
+}
+.btn-player1 {
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  padding: 5px;
+  font-size: 1vw;
+  text-decoration: none;
+}
+.btn-player2 {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.btn-player2 a {
+  margin-right: 9px;
+}
+.btn-player3 {
+  margin: auto;
+  right: 0;
+  margin-right: 0;
+}
+.btn-player3 a {
+  margin-left: 9px;
+}
+a:hover {
+  color: var(--text-prmary);
+}
+/*кнопочки нахуй*/
+
+/*описание нахуй*/
+
+.description {
+  font-size: 1vw;
+}
+
+.player-description {
+  width: 73.6%;
+}
+
+.player-title {
+  color: #FFFFFF;
+  font-size: 2vw;
+  text-decoration: none;
+}
+.player-title1 {
+  font-size: 2vw;
+}
+
+.pdi {
+  color: #FFFFFF;
+  font-size: 1vw;
+}
+.pdip {
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+}
+.pizdec {
+  background-color: #15244B;
+  margin-top: 50px;
+  display: block;
+}
+
+
+/*описание нахуй*/
+
+/* комментарии */
+
+.comments {
+  display: flex;
+}
+.comments-all {
+  width: 50%;
+}
+
+.comments-title {
+  color: #FFFFFF;
+  font-size: 2vw;
+}
+
+.comments-num {
+  font-size: 2vw;
+}
+
+.comments-sort {
+  margin-bottom: 20px;
+}
+
+
+.comments-sort .select {
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 5px;
+  padding: 4px;
+}
+.comments-sort a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 0.7vw;
+}
+#comments {
+  width: 100%;
+  background: #15244B;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  resize: none;
+  padding: 10px;
+  color: #FFFFFF;
+}
+#comments::-webkit-scrollbar {
+  width: 0px;       
+}
+
+.comments-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.comments-btn #clear {
+  background: #15244B;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  font-size: 1vw;
+}
+
+.comments-btn .submit {
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  margin-left: 5px;
+  font-size: 1vw;
+}
+.comments-autor {
+  display: flex;
+  margin-bottom: 10px;
+}
+.comments-avatar {
+  border-radius: 50%;
+  width: 8%;
+}
+.comments-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.comments-name {
+  color: #FFFFFF;
+  font-size: 1vw;
+}
+.comments-time {
+  font-size: 0.7vw;
+}
+.comments-rating {
+  margin: auto;
+  margin-right: 0;
+}
+.comments-text {
+  margin-bottom: 10px;
+  font-size: 1vw;
+}
+.comments-reply {
+  color: #FFFFFF;
+}
