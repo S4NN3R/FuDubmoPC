@@ -190,6 +190,14 @@ html body .swiper#main .swiper-slide {
   position: relative;
   z-index: 0;
 }
+.swiper-slide .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+          line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
 
 html body .swiper#main .swiper-slide::before {
   content: '';
@@ -422,10 +430,12 @@ html body .swiper#main .swiper-slide.swiper-slide-active .content {
   margin-top: -4%;
   position: relative;
   z-index: 100;
+  margin-bottom: 10px;
 }
 .ongoing-btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .ongoing-btn span {
   color: #FFFFFF;
@@ -437,4 +447,27 @@ html body .swiper#main .swiper-slide.swiper-slide-active .content {
   color: #FFFFFF;
   padding: 5px;
   text-decoration: none;
+  font-size: 1vw;
+}
+.later {
+  background-color: #15244B;
+  display: flex;
+}
+.later-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.later-btn span {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+}
+.later-btn a {
+  background: #192852;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1vw;
 }
