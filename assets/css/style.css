@@ -418,3 +418,23 @@ html body .swiper#main .swiper-slide.swiper-slide-active .content {
 .swiper-info {
   width: 50%;
 }
+.ongoing-main {
+  margin-top: -4%;
+  position: relative;
+  z-index: 100;
+}
+.ongoing-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.ongoing-btn span {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+}
+.ongoing-btn a {
+  background: #192852;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 5px;
+  text-decoration: none;
+}
