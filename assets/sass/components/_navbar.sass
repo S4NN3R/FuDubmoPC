@@ -1,0 +1,43 @@
+.navbar
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    background: transparent
+    z-index: 1000
+    backdrop-filter: blur(2px)
+    transition: .5s
+    &.navbar-fixed
+        background-color: #15244bb8
+        backdrop-filter: blur(10px)
+        transition: .5s
+    .navbar-brand
+        span
+            display: none
+    form[role=search]
+        background: rgba(255, 255, 255, 0.2)
+        border-radius: 5px
+        padding: 5px 10px
+        backdrop-filter: blur(10px)
+        button
+            background: none
+            border: none
+            position: relative
+            padding-left: 15px
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                background: rgba(217, 217, 217, 0.2)
+                width: 1px
+                height: 100%
+        input
+            padding: 0
+            background: none
+            border: none
+            color: white
+            min-width: 186px
+            outline: none !important
+            
