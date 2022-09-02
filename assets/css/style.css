@@ -663,6 +663,7 @@ footer {
 .edit-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .edit-info-save {
   display: flex;
@@ -691,9 +692,7 @@ footer {
   margin-bottom: 20px;
 }
 .edit-info img {
-  width: 20%;
   border-radius: 50%;
-  margin-right: 3%;
 }
 .reg a {
   text-decoration: none;
