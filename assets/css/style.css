@@ -398,7 +398,7 @@ html body .swiper#main .swiper-slide.swiper-slide-active .content {
   border-radius: 5px;
   color: var(--button-bg);
   padding: 6px 10px;
-  font-weight: 400;
+  font-size: 1vw;
 }
 
 .btn-primary svg {
@@ -414,7 +414,7 @@ html body .swiper#main .swiper-slide.swiper-slide-active .content {
   border-radius: 5px;
   color: var(--text-prmary);
   padding: 6px 10px;
-  font-weight: 400;
+  font-size: 1vw;
 }
 
 .btn-default:hover {
@@ -539,4 +539,92 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.navbar-custom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: transparent;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.navbar-list {
+  display: flex!important;
+  flex-basis: auto;
+  flex-grow: 1;
+  align-items: center;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #C8C6DA;
+  margin-right: auto!important;
+}
+.nav-link {
+  margin-left: 10px;
+  font-size: 1vw;
+}
+.search {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 0.2% 0.6%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          display: flex;
+}
+
+.search button {
+  background: none;
+  border: none;
+  position: relative;
+  padding-left: 15px;
+}
+
+.search button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(217, 217, 217, 0.2);
+  width: 1px;
+  height: 100%;
+}
+
+.search input {
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
+  outline: none !important;
+  width: 90%;
+  font-size: 0.8vw;
+}
+.btn-header-right {
+  display: flex;
+  width: 30%;
+}
+.foryou {
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.dropdown-item {
+  color: #FFFFFF;
 }
