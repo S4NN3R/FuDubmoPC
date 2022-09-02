@@ -16,6 +16,7 @@ html body {
   background-color: var(--bg);
   color: var(--text-default);
   font-size: 14pt;
+  height: 100%;
 }
 
 html body .navbar {
@@ -626,5 +627,75 @@ footer {
           backdrop-filter: blur(10px);
 }
 .dropdown-item {
+  color: #FFFFFF;
+}
+.login-btn {
+  list-style: none;
+}
+.login-btn .dropdown-menu {
+  background: #192852;
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+}
+.edit {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #192852;
+  overflow: auto;
+  top: 0;
+}
+.edit-syze {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+}
+.edit-syze a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.edit-info {
+  display: flex;
+  flex-direction: column;
+}
+.edit-info-save {
+  display: flex;
+  justify-content: space-between
+}
+.edit-info span {
+  color: #FFFFFF;
+}
+.edit-info input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  border: 0;
+  color: #FFFFFF;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 10px;
+}
+.edit-info button {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.edit-info img {
+  width: 20%;
+  border-radius: 10px;
+  margin-right: 3%;
+}
+.reg a {
+  text-decoration: none;
   color: #FFFFFF;
 }
