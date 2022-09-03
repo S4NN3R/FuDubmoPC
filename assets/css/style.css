@@ -765,7 +765,6 @@ footer {
 }
 .tablinks {
   background: rgba(217, 217, 217, 0.2);
-  border-radius: 5px;
   color: #FFFFFF;
   border: 0;
   padding: 5px;
@@ -798,4 +797,7 @@ footer {
   padding: 5px;
   outline: none;
   margin-bottom: 10px;
+}
+.profile-img .tablinks {
+  border-radius: 5px;
 }
