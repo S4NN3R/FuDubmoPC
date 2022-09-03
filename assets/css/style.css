@@ -726,3 +726,75 @@ footer {
 .register .edit-info-save {
   justify-content: center;
 }
+.profile {
+  margin-top: 70px;
+  display: flex;
+}
+.profile-img {
+  width: 30%;
+}
+.profile-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-info-size {
+  margin: 20px;
+  width: 100%;
+}
+.profile-info {
+  background-color: #15244B;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.profile-info-title {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+}
+.profile-info-description {
+  color: #FFFFFF;
+}
+.profile-info .edit-info {
+  align-items: normal
+}
+.edit-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tablinks {
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+  padding: 5px;
+}
+.profile-edit {
+  width: 100%;
+  margin-top: 10px;
+}
+.settings {
+  width: 100%;
+}
+.profile-name {
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.profile-info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-online {
+  font-size: 1vw;
+}
+.edit-info textarea {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  border: 0;
+  color: #FFFFFF;
+  padding: 5px;
+  outline: none;
+  margin-bottom: 10px;
+}

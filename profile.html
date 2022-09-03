@@ -107,7 +107,7 @@
                     <div class="edit-info">
                       <div><span>Или</span></div>
                       <div class="reg">
-                        <a href="#">Регистрация</a>
+                        <a href="register.html">Регистрация</a>
                       </div>
                     </div>
                   </div>
@@ -128,69 +128,110 @@
   </header>
 
   <main>
-    <section class="header-dark"></section>
     <section class="container">
-        <div class="register">
-        <div class="reg-panel">
-            <div class="edit-info">
-                <div><span>Логин</span></div>
-                <div>
-                  <input placeholder="Ваш логин">
+        <div class="profile">
+            <div class="profile-img"><img src="https://sun9-70.userapi.com/impg/NB8jvPOmOvtvdcpvUzWbN3gg8x4YwXky-brUlQ/5uKlEIzddUY.jpg?size=600x600&quality=95&sign=162a531ec706c931ccf77af9111440f2&type=album">
+            <div class="profile-info-left">
+                <div class="profile-name">S4NN3R</div>
+                <div class="profile-online">был(а) в сети 30 августа 2022 14:26</div>
+                <div class="profile-edit">
+                    <button class="tablinks settings" onclick="openCity(event, 'edit')">Настройки</button>
+                </div>
+            </div>
+            </div>
+            <div class="profile-info-size">
+            <div id="about" class="tabcontent">
+                <div class="profile-info">
+                    <div class="profile-info-title">О себе</div><hr>
+                    <div class="profile-info-description">Люблю когда волосатые мужики обмазываются маслом</div>
                 </div>
               </div>
-            <div class="edit-info">
-              <div><span>Пароль</span></div>
-              <div>
-                <input placeholder="пароль">
+      
+              <div id="edit" class="tabcontent">
+                <div class="profile-info">
+                    <div class="edit-btn">
+                    <div class="profile-info-title">Настройки</div>
+                    <div><button class="tablinks" onclick="openCity(event, 'about')" id="defaultOpen">Закрыть настройки</button></div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div style="margin-top: 10px;">Об аккаунте</div>
+                        <div class="edit-info">
+                          <div><span>Никнейм</span></div>
+                          <div>
+                            <input placeholder="Ваш никнейм">
+                          </div>
+                        </div>
+                        <div class="edit-info">
+                          <div><span>E-mail</span></div>
+                          <div>
+                            <input placeholder="Ваш E-mail">
+                          </div>
+                        </div>
+                        <div class="edit-info">
+                          <div><span>Аватар</span></div>
+                          <div>
+                            <input type="file">
+                          </div>
+                        </div>
+                        <div class="edit-info">
+                          <div><span>О себе</span></div>
+                          <div>
+                            <textarea placeholder="Чилю по жизни"></textarea>
+                          </div>
+                        </div>
+                        <hr>
+                        <div>Пароль</div>
+                        <div class="edit-info">
+                          <div><span>Старый пароль</span></div>
+                          <div>
+                            <input placeholder="Старый пароль">
+                          </div>
+                        </div>
+                        <div class="edit-info">
+                          <div><span>Новый пароль</span></div>
+                          <div>
+                            <input placeholder="Новый пароль">
+                          </div>
+                        </div>
+                        <div class="edit-info">
+                          <div><span>Повторите новый пароль</span></div>
+                          <div>
+                            <input placeholder="Повторите новый пароль">
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="edit-info">
+                          <div class="edit-info-save">
+                            <button>Сохранить</button>
+                            <button>Выйти</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
               </div>
             </div>
-            <div class="edit-info">
-              <div><span>Повторите пароль</span></div>
-              <div>
-                <input placeholder="Повторите пароль">
-              </div>
-            </div>
-            <div class="edit-info">
-              <div><span>E-mail</span></div>
-              <div>
-                <input placeholder="Ваш E-mail">
-              </div>
-            </div>
-            <div class="edit-info">
-              <div class="edit-info-save">
-                <button>Зарегистрироваться</button>
-              </div>
-            </div>
-        </div>
         </div>
     </section>
-    <script>
-        $(function() {
-          var height = window.innerHeight
-          document.documentElement.clientHeight
-          document.body.clientHeight;
-          $('.register').height(height-64);
-        });
-      </script>
-          <script>
-            $(function() {
-              var height = $('footer').height();
-              $('.header-dark').height(height);
-            });
-          </script>
-      <iframe width="100%" height="100%" title="" src="https://www.youtube.com/embed/YT-TsKrM0Jk?&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;loop=1" frameborder="0" allow="autoplay; fullscreen" style="
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 116%;
-      pointer-events: none;
-      user-select: none;
-      filter: blur(5px);
-  "></iframe>
   </main>
 </body>
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
 <footer>
   <div class="container footer">
     <div>
