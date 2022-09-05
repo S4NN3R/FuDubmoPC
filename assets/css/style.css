@@ -883,12 +883,11 @@ footer {
 .about-voices-characters-selecter .character{
   display: none;
 }
-.about-voices-characters-selecter .character:nth-child(-n+5) {
+.about-voices-characters-selecter .character:nth-child(-n+4) {
   display: inline-block;
 }
 .about-voices-info-selecter {
   background-color: #15244B;
-  width: 30%;
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -931,16 +930,96 @@ footer {
   flex-wrap: wrap;
   gap: 2%;
 }
+.about-voices-characters-selecter a{
+  pointer-events: none;
+}
 .about-voices-dubber-selecter {
   color: #FFFFFF;
   font-size: 1.5vw;
   margin-left: 10px;
 }
-.about-voices-characters-selecter .character:nth-child(5) img{
+.about-voices-characters-selecter .character:nth-child(4) img{
 	filter: brightness(30%);
 }
 .voices-about-selecter {
   display: flex;
   gap: 2%;
   flex-wrap: wrap;
+}
+.about-btn {
+  margin-top: 20px;
+}
+
+.about-btn a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: .3s;
+}
+
+.about-btn a:hover {
+  background: var(--button-primary--hover);
+  color: var(--bg);
+  transition: .3s;
+}
+
+.about-btn svg {
+  margin-right: 5px;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 1vw;
+  font-weight: bolder;
+  color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  transition: .3s;
+  border-bottom: 5px solid transparent;
+}
+
+.tab button:hover {
+  transition: 0s;
+}
+
+.episodes-selecter a .episodes-selecter-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  position: relative;
+}
+
+.episodes-selecter a .episodes-selecter-image .episodes-selecter-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 60px;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+.episodes-selecter a .episodes-selecter-image img:not(.episodes-selecter-play) {
+  width: 100%;
+  border-radius: 0px !important;
+  margin-bottom: 0px !important;
+  transform: scale(1);
+  transition: .3s ease-in-out;
+}
+
+.episodes-selecter a:hover .episodes-selecter-image img:not(.episodes-selecter-play) {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+.episodes-selecter a:hover .episodes-selecter-image .episodes-selecter-play {
+  opacity: 1;
+  transition: .3s ease-in-out;
 }
