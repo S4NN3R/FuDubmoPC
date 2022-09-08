@@ -1023,3 +1023,41 @@ footer {
   opacity: 1;
   transition: .3s ease-in-out;
 }
+.search-list {
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  gap: 2%;
+  margin-top: 60px;
+  flex-wrap: wrap
+}
+.search-list img{
+  width:100%;
+  border-radius: 20px;
+}
+.search-list .episodes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  color: var(--text-prmary);
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.search-list .swiper-slide{
+  width: 18.4%;
+}
+.search-list .image {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 16px;
+}
+.search-list .title {
+  color: #FFFFFF;
+}
+.search-list a{
+  text-decoration: none;
+  margin-bottom: 10px;
+}

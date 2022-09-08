@@ -59,3 +59,10 @@ function init() {
 }
 
 $(document).ready(init);
+
+$(function() {
+    var heightrovniy = window.innerHeight
+    document.documentElement.clientHeight
+    document.body.clientHeight;
+    $('.min-height-all').css("min-height", heightrovniy - 124);
+  });
