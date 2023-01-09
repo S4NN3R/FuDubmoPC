@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/player.css">
+  <link rel="stylesheet" href="assets/css/manga.css">
 
   <!-- scripts -->
   <script src="https://cdn.jsdelivr.net/npm/workbox-cdn@5.1.4/workbox/workbox-sw.min.js"></script>
@@ -128,6 +129,112 @@
   </header>
 
   <main class="min-height-all">
+    <div class="container">
+    <div class="manga-about">
+      <div class="manga-info">
+        <div class="manga-poster"><img src="https://sun9-25.userapi.com/impg/NTW7EekanuCvsPFdxJwd-3QL_6z2flR7O3qWCQ/xv6yazohSP4.jpg?size=960x1355&quality=95&sign=1cdf36b0234c11d567515a89a268019d&type=album" alt="Героиня"></div>
+        <div class="manga-stats">
+          <div id="all-data">
+            <div>Год релиза</div>
+            <div id="data">2011</div>
+          </div>
+          <div id="all-data">
+            <div>Автор</div>
+            <a href="#">Mari Matsuzawa</a>
+          </div>
+          <div id="all-data">
+            <div>Художник</div>
+            <a href="#">Mari Matsuzawa</a>
+          </div>
+          <div id="all-data">
+            <div>Издательство</div>
+            <a href="#">Kadokawa</a>
+          </div>
+          <div id="all-data">
+            <div>Возрастной рейтинг</div>
+            <div id="data-rating">18+</div>
+          </div>
+          <div id="all-data">
+            <div>Просмотров</div>
+            <div id="data">228</div>
+          </div>
+          <div id="all-data">
+            <div>Загружено глав</div>
+            <div id="data">51</div>
+          </div>
+          <div id="all-data">
+            <div>Альтернативные названия</div>
+            <div id="data">僕は君たちを支配する</div>
+          </div>
+        </div>
+      </div>
+      <div class="manga-description">
+        <div>
+          <div class="about-title">Моя сестрёнка в последнее время сама не своя</div>
+          <div>Saikin, Imouto no Yousu ga Chotto Okashii n da ga</div>
+        </div>
+        <div class="manga-description-info">
+          <div class="manga-tab">
+            <button class="tablinks" onclick="openCity(event, 'description')">Описание</button>
+            <button class="tablinks" onclick="openCity(event, 'chapters')" id="defaultOpen">Главы</button>
+            <button class="tablinks" onclick="openCity(event, 'commentss')">Комментарии</button>
+          </div>
+  
+          <div id="description" class="tabcontent1">
+            <div>Отец Юи Кандзаки женился второй раз, и у 16-летнего школьника появилась на год младшая сводная сестра. Мицуки – не красавица, не гений, но вполне нормальная девчонка, правда, малость молчаливая и стеснительная. Конечно, привыкать к новой семье нелегко, потому Юя, как настоящий мужчина, решил всячески помогать обретенной родне, тем более что парень он хозяйственный и любую работу по дому знает. А что сестренка скромная попалась - это хорошо, скромность красит девушку, а время лечит. Так бы все и шло, но вмешался Его Величество Случай! В результате нежданного поворота судьбы, в Мицуки вселился дух Хиёри Котобуки, девушки, при жизни обожавшей главного героя. Ради попадания на небеса Хиёри обязана закончить начатое – так решили владыки кармы. Теперь, чтобы помочь агрессивной соседке по телу, несчастной Мицуки придется превратиться в хрестоматийную «младшую сестренку», причем того жанра, который поздно ночью показывают! Можете себе представить состояние Юи, когда скромница и молчунья вдруг начала выкидывать фортели в духе взрослых журналов? А что остается? Поражение в борьбе за «братика» недопустимо, а тут, по законам жанра, то соперницы со всех сторон лезут, то магический пояс верности не вовремя отказывает!</div>
+          </div>
+
+          <div id="chapters" class="tabcontent1">
+            <div class="chapters">
+            <div><a href="#">Том 11 Глава 69</a></div>
+            </div>
+          </div>
+  
+          <div id="commentss" class="tabcontent1">
+            Скоро
+          </div>
+          <script>
+            $(function() {
+              var height = window.innerHeight
+              document.documentElement.clientHeight
+              document.body.clientHeight;
+              $('about-voices').height(height - 134);
+            });
+          </script>
+          <script>
+            $('.S4NN3R1').click(function() {
+              $('.S4NN3R').toggle();
+            });
+            $('.back').click(function() {
+              $('.S4NN3R').toggle();
+            });
+            $('.S4NN3R').click(function(e) {
+              if ($(e.target).closest('.about-voices-info').length == 0) {
+                $(this).toggle();
+              }
+            });
+          </script>
+          <script>
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent1");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+          </script>
+        </div>
+      </div>
+    </div>
+    </div>
   </main>
 <footer>
   <div class="container footer">
