@@ -1,0 +1,29 @@
+.mg_nomark{position:absolute;left:-200px; top:-999px; width: 10px; height: 10px; }
+.manga-chapter-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mangaBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mangaBox img {
+    width: 100%;
+}
+.manga-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 5vh;
+}
+.manga-chapter-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+.manga-chapter-title span{
+    font-size: 3vh;
+}
